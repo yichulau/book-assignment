@@ -76,11 +76,9 @@ export default function CustomizedDialogs( {books} ) {
         aria-labelledby="customized-dialog-title"
         open={open}
       >
+        {/* // @ts-nocheck  */}
         <BootstrapDialogTitle 
-        sx={{
-            fontWeight:"700",
-        }} 
-        id="customized-dialog-title" onClose={handleClose}>
+        onClose={handleClose}>
         {books.volumeInfo.title}
         </BootstrapDialogTitle>
         <DialogContent dividers  >
@@ -125,10 +123,8 @@ export default function CustomizedDialogs( {books} ) {
                 </Grid>
             </Grid>
             <br />
-            <Typography sx={{
-                fontWeight:"700",
-                paddingBottom:"10px"
-            }} dividers>
+       {/* // @ts-nocheck  */}
+            <Typography>
                 Description:
             </Typography>
             <Typography>
